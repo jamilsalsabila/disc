@@ -1,0 +1,17 @@
+<main class="simple-page">
+  <section class="simple-card">
+    <h1>Terima Kasih</h1>
+    <p>Jawaban Anda sudah tersimpan di sistem.</p>
+
+    {{#if candidate}}
+      <div class="result-box">
+        <p><strong>Nama:</strong> {{candidate.full_name}}</p>
+        <p><strong>Role Dipilih:</strong> {{candidate.selected_role}}</p>
+        <p><strong>Status:</strong> {{candidate.status}}</p>
+        <p><strong>Rekomendasi Sistem:</strong> {{recommendationLabel}}</p>
+      </div>
+    {{/if}}
+
+    <a href="/" class="btn-secondary">Kembali ke Halaman Awal</a>
+  </section>
+</main>

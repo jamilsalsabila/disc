@@ -1,0 +1,52 @@
+<main class="hero-page">
+  <section class="hero-card">
+    <p class="eyebrow">Recruitment Assessment</p>
+    <h1>Tes DISC Kandidat Hospitality</h1>
+    <p class="subtitle">Isi data diri kandidat lalu lanjut ke tes DISC berdurasi <strong>10 menit</strong>.</p>
+
+    <section class="info-panel">
+      <h3>Informasi Penting</h3>
+      <ul>
+        <li>Durasi tes adalah <strong>10 menit</strong> dan timer akan berjalan otomatis setelah tes dimulai.</li>
+        <li>Setiap nomor wajib pilih <strong>1 Most</strong> dan <strong>1 Least</strong> (tidak boleh sama).</li>
+        <li><strong>Most</strong> berarti pernyataan yang paling menggambarkan diri Anda saat bekerja.</li>
+        <li><strong>Least</strong> berarti pernyataan yang paling tidak menggambarkan diri Anda saat bekerja.</li>
+        <li>Jawab secara jujur sesuai kondisi Anda saat bekerja, bukan jawaban ideal.</li>
+        <li>Saat waktu habis, jawaban yang sudah terisi akan otomatis terkirim ke sistem.</li>
+      </ul>
+    </section>
+
+    {{#if errorMessage}}
+      <div class="alert">{{errorMessage}}</div>
+    {{/if}}
+
+    <form method="post" action="/start" class="identity-form">
+      <label>
+        Nama Lengkap
+        <input type="text" name="full_name" placeholder="Contoh: Rina Setiawan" value="{{values.full_name}}" required>
+      </label>
+
+      <label>
+        Email
+        <input type="email" name="email" placeholder="nama@email.com" value="{{values.email}}" required>
+      </label>
+
+      <label>
+        No. HP (WA Aktif)
+        <input type="text" name="whatsapp" placeholder="08xxxxxxxxxx" value="{{values.whatsapp}}" required>
+      </label>
+
+      <label>
+        Role yang Dipilih
+        <select name="selected_role" required>
+          <option value="">Pilih role...</option>
+          {{#each roleOptions}}
+            <option value="{{this}}" {{#if (eq ../values.selected_role this)}}selected{{/if}}>{{this}}</option>
+          {{/each}}
+        </select>
+      </label>
+
+      <button type="submit" class="btn-primary">Next: Mulai Tes</button>
+    </form>
+  </section>
+</main>

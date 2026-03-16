@@ -1,0 +1,66 @@
+<main class="hr-page">
+  <header class="hr-header">
+    <div>
+      <p class="eyebrow">HR Console</p>
+      <h1>Kelola Soal DISC</h1>
+      <p class="subtitle">Tambah, edit, hapus, dan aktif/nonaktifkan soal.</p>
+    </div>
+    <div class="hr-actions">
+      <a href="/hr/dashboard" class="btn-secondary">Kembali ke Dashboard</a>
+      <a href="/hr/questions/new" class="btn-primary">Tambah Soal</a>
+      <form method="post" action="/hr/logout" class="inline-form">
+        <button type="submit" class="btn-secondary">Logout</button>
+      </form>
+    </div>
+  </header>
+
+  <section class="table-card">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Urutan</th>
+          <th>Preview Opsi</th>
+          <th>Status</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#if questionBank.length}}
+          {{#each questionBank}}
+            <tr>
+              <td>#{{this.id}}</td>
+              <td>{{this.order}}</td>
+              <td>
+                <small>A. {{this.optionA}}</small><br>
+                <small>B. {{this.optionB}}</small><br>
+                <small>C. {{this.optionC}}</small><br>
+                <small>D. {{this.optionD}}</small>
+              </td>
+              <td>
+                {{#if this.isActive}}
+                  <span class="badge-success">Aktif</span>
+                {{else}}
+                  <span class="badge-muted">Nonaktif</span>
+                {{/if}}
+              </td>
+              <td>
+                <a href="/hr/questions/{{this.id}}/edit" class="table-link btn-detail">Edit</a>
+                <form method="post" action="/hr/questions/{{this.id}}/toggle-active" class="inline-form">
+                  <button type="submit" class="btn-secondary btn-xs">{{#if this.isActive}}Nonaktifkan{{else}}Aktifkan{{/if}}</button>
+                </form>
+                <form method="post" action="/hr/questions/{{this.id}}/delete" class="inline-form" onsubmit="return confirm('Hapus soal ini? Tindakan ini tidak bisa dibatalkan.');">
+                  <button type="submit" class="btn-danger-outline btn-xs">Hapus</button>
+                </form>
+              </td>
+            </tr>
+          {{/each}}
+        {{else}}
+          <tr>
+            <td colspan="5">Belum ada soal.</td>
+          </tr>
+        {{/if}}
+      </tbody>
+    </table>
+  </section>
+</main>

@@ -1,0 +1,41 @@
+{
+  "name": "disc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "hr:hash-password": "node scripts/hash-password.js",
+    "verify:health": "node scripts/verify-auth.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamilsalsabila/disc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamilsalsabila/disc/issues"
+  },
+  "homepage": "https://github.com/jamilsalsabila/disc#readme",
+  "dependencies": {
+    "@hapi/cookie": "^12.0.1",
+    "@hapi/hapi": "^21.4.7",
+    "@hapi/inert": "^7.1.0",
+    "@hapi/jwt": "^3.2.3",
+    "@hapi/vision": "^7.0.3",
+    "bcryptjs": "^3.0.3",
+    "better-sqlite3": "^12.8.0",
+    "dotenv": "^17.3.1",
+    "exceljs": "^4.4.0",
+    "handlebars": "^4.7.8",
+    "joi": "^18.0.2",
+    "pdfkit": "^0.18.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

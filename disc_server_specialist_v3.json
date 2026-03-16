@@ -1,0 +1,271 @@
+{
+"test_name": "DISC Personality Test - Server Specialist (Hospitality Recruitment v3)",
+"estimated_time_minutes": 10,
+"instructions": "Untuk setiap kelompok pernyataan pilih satu yang PALING menggambarkan diri Anda (Most) dan satu yang PALING TIDAK menggambarkan diri Anda (Least). Jawab secara spontan.",
+
+"dimensions": {
+"D": "Dominance",
+"I": "Influence",
+"S": "Steadiness",
+"C": "Conscientiousness"
+},
+
+"questions": [
+
+
+{
+  "id": 1,
+  "options": [
+    {"code": "A", "text": "Saya cepat mengambil keputusan saat situasi mendesak", "dimension": "D"},
+    {"code": "B", "text": "Saya mudah memulai percakapan dengan orang yang baru dikenal", "dimension": "I"},
+    {"code": "C", "text": "Saya sabar ketika membantu orang yang membutuhkan", "dimension": "S"},
+    {"code": "D", "text": "Saya memastikan pekerjaan dilakukan tanpa kesalahan", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 2,
+  "options": [
+    {"code": "A", "text": "Saya suka menghadapi tantangan dalam pekerjaan", "dimension": "D"},
+    {"code": "B", "text": "Saya menikmati membuat suasana menjadi lebih menyenangkan", "dimension": "I"},
+    {"code": "C", "text": "Saya menjaga kerja sama tim tetap harmonis", "dimension": "S"},
+    {"code": "D", "text": "Saya mengikuti prosedur kerja dengan disiplin", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 3,
+  "options": [
+    {"code": "A", "text": "Saya sering mengambil inisiatif tanpa diminta", "dimension": "D"},
+    {"code": "B", "text": "Saya menikmati berbincang dengan pelanggan", "dimension": "I"},
+    {"code": "C", "text": "Saya tetap tenang saat menghadapi orang yang sulit", "dimension": "S"},
+    {"code": "D", "text": "Saya memperhatikan kerapian dalam pekerjaan", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 4,
+  "options": [
+    {"code": "A", "text": "Saya bertindak cepat ketika melihat masalah", "dimension": "D"},
+    {"code": "B", "text": "Saya suka mencairkan suasana yang canggung", "dimension": "I"},
+    {"code": "C", "text": "Saya mendukung rekan kerja ketika mereka membutuhkan bantuan", "dimension": "S"},
+    {"code": "D", "text": "Saya bekerja mengikuti langkah yang jelas", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 5,
+  "options": [
+    {"code": "A", "text": "Saya nyaman mengambil tanggung jawab besar", "dimension": "D"},
+    {"code": "B", "text": "Saya mudah membuat orang lain merasa diterima", "dimension": "I"},
+    {"code": "C", "text": "Saya menjaga hubungan kerja tetap baik", "dimension": "S"},
+    {"code": "D", "text": "Saya mengecek kembali pekerjaan sebelum selesai", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 6,
+  "options": [
+    {"code": "A", "text": "Saya langsung mencari solusi ketika muncul masalah", "dimension": "D"},
+    {"code": "B", "text": "Saya menikmati berbicara dengan berbagai tipe orang", "dimension": "I"},
+    {"code": "C", "text": "Saya dikenal sebagai orang yang dapat diandalkan", "dimension": "S"},
+    {"code": "D", "text": "Saya bekerja secara teratur dan sistematis", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 7,
+  "options": [
+    {"code": "A", "text": "Saya terdorong untuk mencapai hasil terbaik", "dimension": "D"},
+    {"code": "B", "text": "Saya mudah membuat percakapan menjadi menarik", "dimension": "I"},
+    {"code": "C", "text": "Saya menjaga suasana tim tetap stabil", "dimension": "S"},
+    {"code": "D", "text": "Saya memperhatikan ketelitian saat bekerja", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 8,
+  "options": [
+    {"code": "A", "text": "Saya percaya diri saat menghadapi tekanan kerja", "dimension": "D"},
+    {"code": "B", "text": "Saya menikmati berinteraksi dengan tamu", "dimension": "I"},
+    {"code": "C", "text": "Saya tetap sabar dalam situasi ramai", "dimension": "S"},
+    {"code": "D", "text": "Saya memastikan pekerjaan sesuai standar", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 9,
+  "options": [
+    {"code": "A", "text": "Saya cepat merespons ketika ada kebutuhan mendesak", "dimension": "D"},
+    {"code": "B", "text": "Saya suka menciptakan suasana positif di sekitar saya", "dimension": "I"},
+    {"code": "C", "text": "Saya berusaha memahami sudut pandang orang lain", "dimension": "S"},
+    {"code": "D", "text": "Saya menyelesaikan pekerjaan dengan penuh ketelitian", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 10,
+  "options": [
+    {"code": "A", "text": "Saya berani mengambil keputusan sendiri", "dimension": "D"},
+    {"code": "B", "text": "Saya menikmati membangun hubungan baru", "dimension": "I"},
+    {"code": "C", "text": "Saya menjaga kerja sama tim tetap solid", "dimension": "S"},
+    {"code": "D", "text": "Saya mematuhi aturan kerja yang berlaku", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 11,
+  "options": [
+    {"code": "A", "text": "Saya tidak ragu mengambil tindakan ketika diperlukan", "dimension": "D"},
+    {"code": "B", "text": "Saya suka membuat orang lain tersenyum", "dimension": "I"},
+    {"code": "C", "text": "Saya sabar mendengarkan orang lain", "dimension": "S"},
+    {"code": "D", "text": "Saya menjaga kualitas pekerjaan tetap konsisten", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 12,
+  "options": [
+    {"code": "A", "text": "Saya fokus mencapai target kerja", "dimension": "D"},
+    {"code": "B", "text": "Saya mudah beradaptasi dalam lingkungan sosial", "dimension": "I"},
+    {"code": "C", "text": "Saya menghindari konflik dalam tim", "dimension": "S"},
+    {"code": "D", "text": "Saya mengerjakan tugas dengan sangat teliti", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 13,
+  "options": [
+    {"code": "A", "text": "Saya suka bekerja dengan tempo cepat", "dimension": "D"},
+    {"code": "B", "text": "Saya menikmati berbagi cerita dengan orang lain", "dimension": "I"},
+    {"code": "C", "text": "Saya membantu menjaga kenyamanan tim", "dimension": "S"},
+    {"code": "D", "text": "Saya memastikan pekerjaan tersusun rapi", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 14,
+  "options": [
+    {"code": "A", "text": "Saya tertarik mencoba cara baru dalam bekerja", "dimension": "D"},
+    {"code": "B", "text": "Saya suka membuat orang merasa dihargai", "dimension": "I"},
+    {"code": "C", "text": "Saya menjaga stabilitas dalam situasi kerja", "dimension": "S"},
+    {"code": "D", "text": "Saya memperhatikan detail kecil dalam pekerjaan", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 15,
+  "options": [
+    {"code": "A", "text": "Saya bertindak tanpa ragu ketika situasi membutuhkan", "dimension": "D"},
+    {"code": "B", "text": "Saya menikmati menciptakan hubungan yang hangat", "dimension": "I"},
+    {"code": "C", "text": "Saya tetap tenang dalam situasi sibuk", "dimension": "S"},
+    {"code": "D", "text": "Saya memastikan pekerjaan sesuai prosedur", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 16,
+  "options": [
+    {"code": "A", "text": "Saya menyukai pekerjaan yang dinamis", "dimension": "D"},
+    {"code": "B", "text": "Saya sering membuat suasana lebih santai", "dimension": "I"},
+    {"code": "C", "text": "Saya menjaga kerja sama tetap stabil", "dimension": "S"},
+    {"code": "D", "text": "Saya bekerja dengan penuh ketelitian", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 17,
+  "options": [
+    {"code": "A", "text": "Saya siap menghadapi tantangan baru", "dimension": "D"},
+    {"code": "B", "text": "Saya mudah membangun koneksi dengan orang lain", "dimension": "I"},
+    {"code": "C", "text": "Saya menghargai kerja sama tim", "dimension": "S"},
+    {"code": "D", "text": "Saya memastikan semua detail diperiksa", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 18,
+  "options": [
+    {"code": "A", "text": "Saya nyaman memimpin situasi tertentu", "dimension": "D"},
+    {"code": "B", "text": "Saya menikmati percakapan ringan dengan orang baru", "dimension": "I"},
+    {"code": "C", "text": "Saya menjaga hubungan kerja tetap stabil", "dimension": "S"},
+    {"code": "D", "text": "Saya memastikan pekerjaan dilakukan dengan benar", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 19,
+  "options": [
+    {"code": "A", "text": "Saya merespons cepat terhadap perubahan situasi", "dimension": "D"},
+    {"code": "B", "text": "Saya membuat orang lain merasa nyaman berbicara", "dimension": "I"},
+    {"code": "C", "text": "Saya setia terhadap tim kerja", "dimension": "S"},
+    {"code": "D", "text": "Saya bekerja dengan standar kualitas tinggi", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 20,
+  "options": [
+    {"code": "A", "text": "Saya menikmati pekerjaan yang penuh aktivitas", "dimension": "D"},
+    {"code": "B", "text": "Saya senang berkomunikasi dengan banyak orang", "dimension": "I"},
+    {"code": "C", "text": "Saya menjaga ketenangan dalam tekanan kerja", "dimension": "S"},
+    {"code": "D", "text": "Saya mengikuti instruksi dengan cermat", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 21,
+  "options": [
+    {"code": "A", "text": "Saya segera bertindak saat melihat peluang", "dimension": "D"},
+    {"code": "B", "text": "Saya menikmati membangun hubungan jangka panjang", "dimension": "I"},
+    {"code": "C", "text": "Saya bekerja dengan penuh kesabaran", "dimension": "S"},
+    {"code": "D", "text": "Saya memastikan pekerjaan terselesaikan dengan rapi", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 22,
+  "options": [
+    {"code": "A", "text": "Saya cenderung bekerja dengan tempo tinggi", "dimension": "D"},
+    {"code": "B", "text": "Saya senang menciptakan percakapan yang menyenangkan", "dimension": "I"},
+    {"code": "C", "text": "Saya menjaga hubungan kerja tetap baik", "dimension": "S"},
+    {"code": "D", "text": "Saya bekerja mengikuti standar kualitas", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 23,
+  "options": [
+    {"code": "A", "text": "Saya suka mengendalikan situasi kerja", "dimension": "D"},
+    {"code": "B", "text": "Saya mudah berkomunikasi dengan tamu", "dimension": "I"},
+    {"code": "C", "text": "Saya menjaga suasana kerja tetap stabil", "dimension": "S"},
+    {"code": "D", "text": "Saya memastikan semua prosedur dipatuhi", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 24,
+  "options": [
+    {"code": "A", "text": "Saya berani menghadapi tantangan baru", "dimension": "D"},
+    {"code": "B", "text": "Saya menikmati interaksi sosial", "dimension": "I"},
+    {"code": "C", "text": "Saya senang membantu orang lain", "dimension": "S"},
+    {"code": "D", "text": "Saya memastikan pekerjaan selesai dengan akurat", "dimension": "C"}
+  ]
+}
+
+
+],
+
+"scoring_rules": {
+"most_score": 1,
+"least_score": -1,
+"method": "Tambahkan +1 pada dimensi yang dipilih sebagai Most dan -1 pada dimensi yang dipilih sebagai Least."
+},
+
+"ideal_profile_server_specialist": {
+"Dominance": "Low-Medium",
+"Influence": "High",
+"Steadiness": "Medium-High",
+"Conscientiousness": "Medium"
+}
+}

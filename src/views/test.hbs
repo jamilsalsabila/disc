@@ -1,0 +1,59 @@
+<main class="test-page" data-deadline="{{deadlineAt}}">
+  <header class="test-header">
+    <div>
+      <p class="eyebrow">Kandidat: {{candidate.full_name}}</p>
+      <h1>Tes DISC</h1>
+    </div>
+  </header>
+
+  <div class="floating-timer">
+    <span>Sisa Waktu</span>
+    <strong id="countdown">10:00</strong>
+  </div>
+
+  <form method="post" action="/submit" id="disc-form">
+    {{#if errorMessage}}
+      <div class="alert">{{errorMessage}}</div>
+    {{/if}}
+    {{#each questions}}
+      <article class="question-card">
+        <h3>
+          {{this.order}}. Pilih pernyataan Most dan Least
+          <span class="question-status is-invalid" data-question-id="{{this.id}}">Belum valid</span>
+        </h3>
+
+        <table class="ml-table">
+          <thead>
+            <tr>
+              <th>Pernyataan</th>
+              <th class="pick-col">Most</th>
+              <th class="pick-col">Least</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each this.options}}
+              <tr>
+                <td>
+                  <span class="option-badge">{{this.code}}</span>
+                  {{this.text}}
+                </td>
+                <td class="pick-col">
+                  <input type="radio" name="q_{{../id}}_most" value="{{this.code}}" required>
+                </td>
+                <td class="pick-col">
+                  <input type="radio" name="q_{{../id}}_least" value="{{this.code}}" required>
+                </td>
+              </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </article>
+    {{/each}}
+
+    <div class="sticky-submit">
+      <button type="submit" class="btn-primary">Kirim Jawaban</button>
+    </div>
+  </form>
+</main>
+
+<script src="/public/js/test-timer.js"></script>

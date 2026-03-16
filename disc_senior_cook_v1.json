@@ -1,0 +1,272 @@
+{
+"test_name": "DISC Personality Test - Senior Cook (Hospitality Assessment)",
+"estimated_time_minutes": 10,
+
+"instructions": "Pilih satu pernyataan yang PALING menggambarkan diri Anda (Most) dan satu yang PALING TIDAK menggambarkan diri Anda (Least) pada setiap kelompok.",
+
+"dimensions": {
+"D": "Dominance",
+"I": "Influence",
+"S": "Steadiness",
+"C": "Conscientiousness"
+},
+
+"questions": [
+
+
+{
+  "id": 1,
+  "options": [
+    {"code": "A", "text": "Saya cepat mengambil keputusan saat situasi dapur berubah", "dimension": "D"},
+    {"code": "B", "text": "Saya mudah berkomunikasi dengan tim kerja", "dimension": "I"},
+    {"code": "C", "text": "Saya tetap tenang saat dapur sedang sibuk", "dimension": "S"},
+    {"code": "D", "text": "Saya memastikan resep diikuti dengan tepat", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 2,
+  "options": [
+    {"code": "A", "text": "Saya segera menyelesaikan masalah operasional di dapur", "dimension": "D"},
+    {"code": "B", "text": "Saya suka berbagi pengetahuan memasak dengan tim", "dimension": "I"},
+    {"code": "C", "text": "Saya menjaga ritme kerja tetap stabil", "dimension": "S"},
+    {"code": "D", "text": "Saya memperhatikan kualitas bahan makanan", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 3,
+  "options": [
+    {"code": "A", "text": "Saya berani mengambil keputusan dalam situasi mendesak", "dimension": "D"},
+    {"code": "B", "text": "Saya mudah menjelaskan tugas kepada anggota tim", "dimension": "I"},
+    {"code": "C", "text": "Saya bekerja konsisten sepanjang shift", "dimension": "S"},
+    {"code": "D", "text": "Saya memastikan rasa makanan tetap konsisten", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 4,
+  "options": [
+    {"code": "A", "text": "Saya langsung bertindak ketika melihat kesalahan kerja", "dimension": "D"},
+    {"code": "B", "text": "Saya menjaga komunikasi yang baik dengan rekan kerja", "dimension": "I"},
+    {"code": "C", "text": "Saya tetap fokus saat pesanan datang bertubi-tubi", "dimension": "S"},
+    {"code": "D", "text": "Saya memperhatikan detail plating makanan", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 5,
+  "options": [
+    {"code": "A", "text": "Saya suka mengatur alur kerja dapur", "dimension": "D"},
+    {"code": "B", "text": "Saya membantu menciptakan suasana kerja positif", "dimension": "I"},
+    {"code": "C", "text": "Saya menjaga kestabilan kerja dalam tim", "dimension": "S"},
+    {"code": "D", "text": "Saya memastikan standar kebersihan dapur terpenuhi", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 6,
+  "options": [
+    {"code": "A", "text": "Saya cepat menyesuaikan diri saat kondisi dapur berubah", "dimension": "D"},
+    {"code": "B", "text": "Saya mudah berkoordinasi dengan anggota tim", "dimension": "I"},
+    {"code": "C", "text": "Saya sabar dalam menghadapi tekanan kerja", "dimension": "S"},
+    {"code": "D", "text": "Saya memeriksa kembali kualitas makanan sebelum disajikan", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 7,
+  "options": [
+    {"code": "A", "text": "Saya fokus menyelesaikan pesanan dengan cepat", "dimension": "D"},
+    {"code": "B", "text": "Saya suka memberi arahan kepada tim dapur", "dimension": "I"},
+    {"code": "C", "text": "Saya menjaga ritme kerja agar tetap stabil", "dimension": "S"},
+    {"code": "D", "text": "Saya memastikan teknik memasak dilakukan dengan benar", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 8,
+  "options": [
+    {"code": "A", "text": "Saya percaya diri menghadapi tekanan service", "dimension": "D"},
+    {"code": "B", "text": "Saya mudah berkomunikasi saat koordinasi dapur", "dimension": "I"},
+    {"code": "C", "text": "Saya tetap tenang ketika pesanan menumpuk", "dimension": "S"},
+    {"code": "D", "text": "Saya menjaga standar rasa setiap hidangan", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 9,
+  "options": [
+    {"code": "A", "text": "Saya mencari solusi cepat ketika ada kesalahan produksi", "dimension": "D"},
+    {"code": "B", "text": "Saya menikmati bekerja sama dengan tim dapur", "dimension": "I"},
+    {"code": "C", "text": "Saya menjaga kestabilan kerja selama service panjang", "dimension": "S"},
+    {"code": "D", "text": "Saya memastikan ukuran porsi sesuai standar", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 10,
+  "options": [
+    {"code": "A", "text": "Saya nyaman mengambil keputusan saat bekerja", "dimension": "D"},
+    {"code": "B", "text": "Saya mudah menyampaikan instruksi kerja", "dimension": "I"},
+    {"code": "C", "text": "Saya menjaga hubungan kerja yang harmonis", "dimension": "S"},
+    {"code": "D", "text": "Saya mengikuti SOP dapur secara konsisten", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 11,
+  "options": [
+    {"code": "A", "text": "Saya suka menghadapi tantangan di dapur", "dimension": "D"},
+    {"code": "B", "text": "Saya suka berdiskusi tentang teknik memasak", "dimension": "I"},
+    {"code": "C", "text": "Saya menjaga kestabilan emosi dalam tekanan kerja", "dimension": "S"},
+    {"code": "D", "text": "Saya memastikan bahan makanan diproses dengan benar", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 12,
+  "options": [
+    {"code": "A", "text": "Saya fokus menyelesaikan pesanan tepat waktu", "dimension": "D"},
+    {"code": "B", "text": "Saya mudah berkoordinasi dengan tim dapur", "dimension": "I"},
+    {"code": "C", "text": "Saya tetap konsisten sepanjang jam kerja", "dimension": "S"},
+    {"code": "D", "text": "Saya memastikan hidangan terlihat rapi", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 13,
+  "options": [
+    {"code": "A", "text": "Saya menyukai pekerjaan yang membutuhkan kecepatan", "dimension": "D"},
+    {"code": "B", "text": "Saya suka membangun kerja sama tim", "dimension": "I"},
+    {"code": "C", "text": "Saya menjaga kestabilan ritme dapur", "dimension": "S"},
+    {"code": "D", "text": "Saya memperhatikan detail teknik memasak", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 14,
+  "options": [
+    {"code": "A", "text": "Saya tertarik mencoba metode memasak baru", "dimension": "D"},
+    {"code": "B", "text": "Saya suka berbagi pengalaman memasak", "dimension": "I"},
+    {"code": "C", "text": "Saya menjaga kestabilan kerja dalam tim", "dimension": "S"},
+    {"code": "D", "text": "Saya memperhatikan kebersihan area dapur", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 15,
+  "options": [
+    {"code": "A", "text": "Saya bertindak cepat saat terjadi kesalahan di dapur", "dimension": "D"},
+    {"code": "B", "text": "Saya mudah berinteraksi dengan tim kerja", "dimension": "I"},
+    {"code": "C", "text": "Saya sabar dalam menghadapi tekanan service", "dimension": "S"},
+    {"code": "D", "text": "Saya mengontrol kualitas makanan sebelum keluar", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 16,
+  "options": [
+    {"code": "A", "text": "Saya menikmati pekerjaan dapur yang dinamis", "dimension": "D"},
+    {"code": "B", "text": "Saya suka menciptakan suasana kerja yang nyaman", "dimension": "I"},
+    {"code": "C", "text": "Saya menjaga kestabilan kerja tim", "dimension": "S"},
+    {"code": "D", "text": "Saya memperhatikan detail rasa makanan", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 17,
+  "options": [
+    {"code": "A", "text": "Saya siap menghadapi tantangan operasional", "dimension": "D"},
+    {"code": "B", "text": "Saya mudah membangun kerja sama dengan tim", "dimension": "I"},
+    {"code": "C", "text": "Saya menghargai stabilitas kerja tim", "dimension": "S"},
+    {"code": "D", "text": "Saya memastikan kualitas masakan konsisten", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 18,
+  "options": [
+    {"code": "A", "text": "Saya nyaman mengambil peran memimpin di dapur", "dimension": "D"},
+    {"code": "B", "text": "Saya suka memberikan arahan kepada tim", "dimension": "I"},
+    {"code": "C", "text": "Saya menjaga hubungan kerja tetap stabil", "dimension": "S"},
+    {"code": "D", "text": "Saya memastikan resep diikuti secara akurat", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 19,
+  "options": [
+    {"code": "A", "text": "Saya cepat beradaptasi dengan perubahan situasi dapur", "dimension": "D"},
+    {"code": "B", "text": "Saya menjaga komunikasi yang baik dengan tim", "dimension": "I"},
+    {"code": "C", "text": "Saya setia terhadap tim kerja", "dimension": "S"},
+    {"code": "D", "text": "Saya menjaga standar kualitas makanan", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 20,
+  "options": [
+    {"code": "A", "text": "Saya menikmati pekerjaan dapur dengan aktivitas tinggi", "dimension": "D"},
+    {"code": "B", "text": "Saya suka berdiskusi tentang menu dengan tim", "dimension": "I"},
+    {"code": "C", "text": "Saya menjaga ketenangan saat tekanan meningkat", "dimension": "S"},
+    {"code": "D", "text": "Saya mengikuti prosedur dapur secara konsisten", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 21,
+  "options": [
+    {"code": "A", "text": "Saya bertindak cepat ketika melihat masalah kerja", "dimension": "D"},
+    {"code": "B", "text": "Saya menikmati kerja tim di dapur", "dimension": "I"},
+    {"code": "C", "text": "Saya bekerja dengan kesabaran tinggi", "dimension": "S"},
+    {"code": "D", "text": "Saya memastikan area kerja tetap rapi", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 22,
+  "options": [
+    {"code": "A", "text": "Saya bekerja dengan tempo cepat saat service", "dimension": "D"},
+    {"code": "B", "text": "Saya suka menciptakan komunikasi yang baik di dapur", "dimension": "I"},
+    {"code": "C", "text": "Saya menjaga hubungan baik dengan rekan kerja", "dimension": "S"},
+    {"code": "D", "text": "Saya memastikan standar kebersihan dapur terpenuhi", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 23,
+  "options": [
+    {"code": "A", "text": "Saya suka mengambil kendali dalam situasi dapur", "dimension": "D"},
+    {"code": "B", "text": "Saya mudah menyampaikan arahan kerja", "dimension": "I"},
+    {"code": "C", "text": "Saya menjaga stabilitas kerja tim", "dimension": "S"},
+    {"code": "D", "text": "Saya memastikan setiap hidangan sesuai standar", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 24,
+  "options": [
+    {"code": "A", "text": "Saya berani menghadapi tantangan baru di dapur", "dimension": "D"},
+    {"code": "B", "text": "Saya menikmati interaksi positif dengan tim", "dimension": "I"},
+    {"code": "C", "text": "Saya senang membantu rekan kerja", "dimension": "S"},
+    {"code": "D", "text": "Saya memastikan kualitas makanan tetap konsisten", "dimension": "C"}
+  ]
+}
+
+
+],
+
+"scoring_rules": {
+"most_score": 1,
+"least_score": -1,
+"method": "Tambahkan +1 pada dimensi yang dipilih sebagai Most dan -1 pada dimensi yang dipilih sebagai Least."
+},
+
+"ideal_profile_senior_cook": {
+"Dominance": "Medium",
+"Influence": "Low-Medium",
+"Steadiness": "Medium-High",
+"Conscientiousness": "High"
+}
+}

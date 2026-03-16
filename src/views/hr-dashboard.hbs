@@ -1,0 +1,98 @@
+<main class="hr-page">
+  <header class="hr-header">
+    <div>
+      <p class="eyebrow">HR Console</p>
+      <h1>Dashboard DISC Kandidat</h1>
+    </div>
+    <div class="hr-actions">
+      <a href="/hr/questions" class="btn-secondary">Kelola Soal</a>
+      <a href="/hr/export/excel" class="btn-secondary">Export Excel</a>
+      <a href="/hr/export/pdf" class="btn-secondary">Export PDF</a>
+      <form method="post" action="/hr/logout" class="inline-form">
+        <button type="submit" class="btn-secondary">Logout</button>
+      </form>
+    </div>
+  </header>
+
+  <section class="chart-grid">
+    <article class="chart-card chart-card-role">
+      <h3>Distribusi Rekomendasi</h3>
+      <div class="chart-shell chart-shell-donut">
+        <canvas id="roleChart"></canvas>
+      </div>
+    </article>
+    <article class="chart-card chart-card-disc">
+      <h3>Rata-rata DISC</h3>
+      <div class="chart-shell chart-shell-bar">
+        <canvas id="discChart"></canvas>
+      </div>
+    </article>
+  </section>
+
+  <section class="filter-card">
+    <form method="get" action="/hr/dashboard" class="filter-grid" id="hr-filter-form">
+      <input type="text" name="search" placeholder="Cari nama/email/WA" value="{{filters.search}}">
+      <select name="role">
+        <option value="">Semua role dipilih</option>
+        {{#each roleOptions}}
+          <option value="{{this}}" {{#if (eq ../filters.role this)}}selected{{/if}}>{{this}}</option>
+        {{/each}}
+      </select>
+      <select name="recommendation">
+        <option value="">Semua rekomendasi</option>
+        {{#each recommendationOptions}}
+          <option value="{{this.value}}" {{#if (eq ../filters.recommendation this.value)}}selected{{/if}}>{{this.label}}</option>
+        {{/each}}
+      </select>
+      <button type="button" class="btn-secondary" id="reset-filter-btn">Reset</button>
+    </form>
+  </section>
+
+  <section class="table-card">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nama</th>
+          <th>Role Dipilih</th>
+          <th>Rekomendasi</th>
+          <th>DISC</th>
+          <th>Status</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody id="candidate-table-body">
+        {{#if candidates.length}}
+          {{#each candidates}}
+            <tr class="candidate-row" data-href="/hr/candidates/{{this.id}}">
+              <td>#{{this.id}}</td>
+              <td>
+                <strong>{{this.full_name}}</strong><br>
+                <small>{{this.email}}</small>
+              </td>
+              <td>{{this.selected_role}}</td>
+              <td>{{mapRec this.recommendation}}</td>
+              <td>D {{this.disc_d}} / I {{this.disc_i}} / S {{this.disc_s}} / C {{this.disc_c}}</td>
+              <td>{{this.status}}</td>
+              <td>
+                <a href="/hr/candidates/{{this.id}}" class="table-link btn-detail">Detail Profil</a>
+                <button type="button" class="btn-danger-outline delete-candidate-btn" data-id="{{this.id}}" data-name="{{this.full_name}}">Hapus</button>
+              </td>
+            </tr>
+          {{/each}}
+        {{else}}
+          <tr>
+            <td colspan="7">Belum ada data kandidat.</td>
+          </tr>
+        {{/if}}
+      </tbody>
+    </table>
+  </section>
+</main>
+
+<script>
+  window.initialCandidates = {{{candidatesJson}}};
+  window.roleDistribution = {{{roleDistributionJson}}};
+  window.avgDisc = {{{avgDiscJson}}};
+</script>
+<script src="/public/js/hr-dashboard.js"></script>

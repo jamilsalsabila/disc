@@ -1,0 +1,143 @@
+1
+A. Saya cepat mengambil keputusan saat bekerja
+B. Saya mudah berbicara dengan orang baru
+C. Saya tetap tenang saat pekerjaan sedang ramai
+D. Saya memperhatikan detail dalam pekerjaan
+
+2
+A. Saya suka menyelesaikan masalah secara langsung
+B. Saya menikmati berinteraksi dengan pelanggan
+C. Saya bekerja dengan stabil sepanjang shift
+D. Saya memastikan pekerjaan mengikuti aturan
+
+3
+A. Saya berinisiatif mengambil tindakan saat diperlukan
+B. Saya suka membuat suasana kerja lebih menyenangkan
+C. Saya menjaga kerja sama tim tetap baik
+D. Saya memastikan pekerjaan dilakukan dengan benar
+
+4
+A. Saya cepat bertindak ketika melihat masalah
+B. Saya mudah membuat orang merasa nyaman
+C. Saya sabar saat menghadapi tekanan kerja
+D. Saya mengikuti langkah kerja dengan teliti
+
+5
+A. Saya suka mengatur pekerjaan agar lebih efektif
+B. Saya menikmati berbicara dengan pelanggan
+C. Saya menjaga suasana kerja tetap stabil
+D. Saya memastikan kualitas pekerjaan tetap baik
+
+6
+A. Saya mengambil tindakan saat ada masalah kerja
+B. Saya suka berinteraksi dengan banyak orang
+C. Saya menjaga hubungan baik dengan rekan kerja
+D. Saya bekerja dengan rapi dan teratur
+
+7
+A. Saya fokus menyelesaikan pekerjaan dengan cepat
+B. Saya mudah membuat orang lain merasa nyaman
+C. Saya bekerja dengan ritme yang stabil
+D. Saya memperhatikan kualitas hasil kerja
+
+8
+A. Saya percaya diri menghadapi tekanan kerja
+B. Saya menikmati percakapan dengan pelanggan
+C. Saya tetap tenang saat pekerjaan menumpuk
+D. Saya memastikan pekerjaan sesuai standar
+
+9
+A. Saya segera mencari solusi saat ada kesalahan
+B. Saya suka menjelaskan sesuatu kepada orang lain
+C. Saya bekerja dengan konsisten sepanjang waktu
+D. Saya memastikan pekerjaan dilakukan dengan benar
+
+10
+A. Saya nyaman mengambil keputusan saat bekerja
+B. Saya mudah memulai percakapan dengan orang lain
+C. Saya menjaga hubungan kerja tetap harmonis
+D. Saya mengikuti prosedur kerja dengan baik
+
+11
+A. Saya suka menghadapi tantangan dalam pekerjaan
+B. Saya suka berbagi pengalaman dengan orang lain
+C. Saya menjaga kestabilan kerja dalam tim
+D. Saya memperhatikan detail kecil
+
+12
+A. Saya fokus menyelesaikan pekerjaan tepat waktu
+B. Saya mudah beradaptasi dengan orang baru
+C. Saya tetap konsisten sepanjang jam kerja
+D. Saya memastikan pekerjaan terlihat rapi
+
+13
+A. Saya suka pekerjaan yang bergerak cepat
+B. Saya menikmati berbicara dengan banyak orang
+C. Saya menjaga ritme kerja tetap stabil
+D. Saya memastikan kualitas pekerjaan tetap baik
+
+14
+A. Saya tertarik mencoba cara kerja baru
+B. Saya suka memberi saran kepada orang lain
+C. Saya menjaga kerja sama tim tetap baik
+D. Saya memperhatikan detail pekerjaan
+
+15
+A. Saya bertindak cepat saat terjadi kesalahan
+B. Saya menikmati percakapan santai dengan orang lain
+C. Saya sabar saat pekerjaan sedang ramai
+D. Saya memastikan pekerjaan dilakukan dengan benar
+
+16
+A. Saya menyukai pekerjaan yang dinamis
+B. Saya sering membuat suasana kerja lebih santai
+C. Saya menjaga stabilitas kerja tim
+D. Saya memperhatikan kualitas pekerjaan
+
+17
+A. Saya siap menghadapi tantangan baru
+B. Saya mudah membangun hubungan dengan orang lain
+C. Saya menghargai kerja sama tim
+D. Saya memastikan pekerjaan konsisten
+
+18
+A. Saya nyaman memimpin situasi kerja
+B. Saya suka berbagi pengetahuan dengan orang lain
+C. Saya menjaga hubungan kerja tetap stabil
+D. Saya memastikan pekerjaan mengikuti standar
+
+19
+A. Saya cepat beradaptasi dengan perubahan situasi
+B. Saya membuat orang lain merasa nyaman
+C. Saya setia terhadap tim kerja
+D. Saya menjaga kualitas pekerjaan
+
+20
+A. Saya menikmati pekerjaan dengan aktivitas tinggi
+B. Saya senang berkomunikasi dengan banyak orang
+C. Saya menjaga ketenangan saat tekanan meningkat
+D. Saya mengikuti prosedur kerja dengan baik
+
+21
+A. Saya bertindak cepat ketika melihat masalah kerja
+B. Saya menikmati kerja sama dengan orang lain
+C. Saya bekerja dengan kesabaran tinggi
+D. Saya memastikan pekerjaan dilakukan dengan rapi
+
+22
+A. Saya bekerja dengan tempo cepat
+B. Saya suka menciptakan percakapan yang menyenangkan
+C. Saya menjaga hubungan baik dengan tim
+D. Saya memastikan standar kerja terpenuhi
+
+23
+A. Saya berinisiatif mengatur pekerjaan saat situasi sibuk
+B. Saya mudah menjelaskan sesuatu kepada orang lain
+C. Saya menjaga suasana kerja tetap stabil
+D. Saya memastikan pekerjaan sesuai standar
+
+24
+A. Saya berani menghadapi tantangan kerja
+B. Saya menikmati interaksi dengan banyak orang
+C. Saya senang membantu rekan kerja
+D. Saya memastikan kualitas pekerjaan tetap baik

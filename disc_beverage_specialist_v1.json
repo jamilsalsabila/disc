@@ -1,0 +1,271 @@
+{
+"test_name": "DISC Personality Test - Beverage Specialist (Hospitality Assessment v2)",
+"estimated_time_minutes": 10,
+"instructions": "Pilih satu pernyataan yang PALING menggambarkan diri Anda (Most) dan satu yang PALING TIDAK menggambarkan diri Anda (Least) pada setiap kelompok.",
+
+"dimensions": {
+"D": "Dominance",
+"I": "Influence",
+"S": "Steadiness",
+"C": "Conscientiousness"
+},
+
+"questions": [
+
+
+{
+  "id": 1,
+  "options": [
+    {"code": "A", "text": "Saya cepat mengambil tindakan saat terjadi masalah operasional", "dimension": "D"},
+    {"code": "B", "text": "Saya mudah membuka percakapan dengan pelanggan baru", "dimension": "I"},
+    {"code": "C", "text": "Saya bekerja dengan ritme yang stabil sepanjang shift", "dimension": "S"},
+    {"code": "D", "text": "Saya mengikuti resep minuman dengan akurat", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 2,
+  "options": [
+    {"code": "A", "text": "Saya suka menyelesaikan masalah secara langsung", "dimension": "D"},
+    {"code": "B", "text": "Saya menikmati menjelaskan menu minuman kepada tamu", "dimension": "I"},
+    {"code": "C", "text": "Saya tetap tenang ketika situasi kerja menjadi ramai", "dimension": "S"},
+    {"code": "D", "text": "Saya memastikan ukuran bahan sesuai standar bar", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 3,
+  "options": [
+    {"code": "A", "text": "Saya berani mengambil inisiatif ketika diperlukan", "dimension": "D"},
+    {"code": "B", "text": "Saya senang memberikan rekomendasi minuman kepada tamu", "dimension": "I"},
+    {"code": "C", "text": "Saya menjaga suasana kerja tetap tenang", "dimension": "S"},
+    {"code": "D", "text": "Saya memperhatikan keseimbangan rasa minuman", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 4,
+  "options": [
+    {"code": "A", "text": "Saya cepat merespons ketika terjadi kesalahan pesanan", "dimension": "D"},
+    {"code": "B", "text": "Saya suka berbincang ringan dengan pelanggan di bar", "dimension": "I"},
+    {"code": "C", "text": "Saya membantu rekan kerja saat mereka kewalahan", "dimension": "S"},
+    {"code": "D", "text": "Saya memeriksa kebersihan alat sebelum digunakan", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 5,
+  "options": [
+    {"code": "A", "text": "Saya terdorong menyelesaikan pekerjaan dengan cepat", "dimension": "D"},
+    {"code": "B", "text": "Saya mudah membuat pelanggan merasa santai", "dimension": "I"},
+    {"code": "C", "text": "Saya menjaga konsistensi ritme kerja", "dimension": "S"},
+    {"code": "D", "text": "Saya memastikan gelas penyajian sesuai standar", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 6,
+  "options": [
+    {"code": "A", "text": "Saya bertindak cepat ketika melihat sesuatu tidak beres", "dimension": "D"},
+    {"code": "B", "text": "Saya suka menciptakan interaksi yang menyenangkan dengan tamu", "dimension": "I"},
+    {"code": "C", "text": "Saya dikenal sebagai orang yang konsisten dalam pekerjaan", "dimension": "S"},
+    {"code": "D", "text": "Saya memastikan area bar selalu bersih", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 7,
+  "options": [
+    {"code": "A", "text": "Saya menikmati pekerjaan yang membutuhkan kecepatan", "dimension": "D"},
+    {"code": "B", "text": "Saya senang membuat suasana kerja lebih hidup", "dimension": "I"},
+    {"code": "C", "text": "Saya menjaga kestabilan emosi dalam tekanan kerja", "dimension": "S"},
+    {"code": "D", "text": "Saya memperhatikan tampilan minuman sebelum disajikan", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 8,
+  "options": [
+    {"code": "A", "text": "Saya percaya diri mengambil keputusan di tempat kerja", "dimension": "D"},
+    {"code": "B", "text": "Saya menikmati percakapan dengan pelanggan tetap", "dimension": "I"},
+    {"code": "C", "text": "Saya sabar menghadapi antrean pesanan", "dimension": "S"},
+    {"code": "D", "text": "Saya memastikan es dan garnish sesuai standar minuman", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 9,
+  "options": [
+    {"code": "A", "text": "Saya fokus menemukan solusi saat terjadi kendala", "dimension": "D"},
+    {"code": "B", "text": "Saya suka menjelaskan perbedaan jenis minuman kepada tamu", "dimension": "I"},
+    {"code": "C", "text": "Saya menjaga kestabilan kerja selama shift panjang", "dimension": "S"},
+    {"code": "D", "text": "Saya memastikan rasa minuman sesuai resep", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 10,
+  "options": [
+    {"code": "A", "text": "Saya nyaman mengambil keputusan sendiri", "dimension": "D"},
+    {"code": "B", "text": "Saya mudah membangun hubungan dengan pelanggan", "dimension": "I"},
+    {"code": "C", "text": "Saya menjaga kerja sama tim tetap harmonis", "dimension": "S"},
+    {"code": "D", "text": "Saya mengikuti langkah pembuatan minuman dengan urutan benar", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 11,
+  "options": [
+    {"code": "A", "text": "Saya berani menghadapi situasi kerja yang menantang", "dimension": "D"},
+    {"code": "B", "text": "Saya menikmati interaksi sosial di tempat kerja", "dimension": "I"},
+    {"code": "C", "text": "Saya menjaga hubungan kerja tetap stabil", "dimension": "S"},
+    {"code": "D", "text": "Saya memeriksa kualitas bahan sebelum digunakan", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 12,
+  "options": [
+    {"code": "A", "text": "Saya fokus mencapai hasil kerja yang baik", "dimension": "D"},
+    {"code": "B", "text": "Saya mudah beradaptasi dengan berbagai tipe pelanggan", "dimension": "I"},
+    {"code": "C", "text": "Saya tetap tenang dalam situasi sibuk", "dimension": "S"},
+    {"code": "D", "text": "Saya memastikan minuman disajikan dengan tampilan rapi", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 13,
+  "options": [
+    {"code": "A", "text": "Saya suka pekerjaan yang bergerak cepat", "dimension": "D"},
+    {"code": "B", "text": "Saya menikmati menciptakan suasana ramah", "dimension": "I"},
+    {"code": "C", "text": "Saya menjaga kestabilan kerja dalam tim", "dimension": "S"},
+    {"code": "D", "text": "Saya memperhatikan kualitas ekstraksi kopi atau campuran minuman", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 14,
+  "options": [
+    {"code": "A", "text": "Saya tertarik mencoba teknik minuman baru", "dimension": "D"},
+    {"code": "B", "text": "Saya suka memberi rekomendasi minuman favorit", "dimension": "I"},
+    {"code": "C", "text": "Saya menjaga kestabilan ritme kerja", "dimension": "S"},
+    {"code": "D", "text": "Saya memperhatikan kebersihan peralatan bar", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 15,
+  "options": [
+    {"code": "A", "text": "Saya bertindak cepat ketika terjadi kesalahan produksi", "dimension": "D"},
+    {"code": "B", "text": "Saya menikmati percakapan santai dengan pelanggan", "dimension": "I"},
+    {"code": "C", "text": "Saya sabar dalam menyelesaikan pesanan", "dimension": "S"},
+    {"code": "D", "text": "Saya mengukur bahan minuman dengan presisi", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 16,
+  "options": [
+    {"code": "A", "text": "Saya menyukai pekerjaan yang dinamis", "dimension": "D"},
+    {"code": "B", "text": "Saya sering membuat suasana kerja lebih santai", "dimension": "I"},
+    {"code": "C", "text": "Saya menjaga kestabilan kerja dalam tim", "dimension": "S"},
+    {"code": "D", "text": "Saya memperhatikan tekstur dan tampilan minuman", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 17,
+  "options": [
+    {"code": "A", "text": "Saya siap menghadapi tantangan baru", "dimension": "D"},
+    {"code": "B", "text": "Saya mudah menjalin hubungan dengan pelanggan tetap", "dimension": "I"},
+    {"code": "C", "text": "Saya menghargai kerja sama tim", "dimension": "S"},
+    {"code": "D", "text": "Saya menjaga konsistensi rasa minuman", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 18,
+  "options": [
+    {"code": "A", "text": "Saya nyaman mengambil peran memimpin situasi", "dimension": "D"},
+    {"code": "B", "text": "Saya menikmati percakapan dengan tamu di bar", "dimension": "I"},
+    {"code": "C", "text": "Saya menjaga hubungan kerja tetap stabil", "dimension": "S"},
+    {"code": "D", "text": "Saya memastikan resep minuman diikuti dengan tepat", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 19,
+  "options": [
+    {"code": "A", "text": "Saya merespons cepat terhadap perubahan situasi", "dimension": "D"},
+    {"code": "B", "text": "Saya membuat pelanggan merasa nyaman berbicara", "dimension": "I"},
+    {"code": "C", "text": "Saya setia terhadap tim kerja", "dimension": "S"},
+    {"code": "D", "text": "Saya menjaga standar kualitas minuman", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 20,
+  "options": [
+    {"code": "A", "text": "Saya menikmati pekerjaan dengan aktivitas tinggi", "dimension": "D"},
+    {"code": "B", "text": "Saya senang berkomunikasi dengan banyak orang", "dimension": "I"},
+    {"code": "C", "text": "Saya menjaga ketenangan saat tekanan meningkat", "dimension": "S"},
+    {"code": "D", "text": "Saya mengikuti prosedur pembuatan minuman secara konsisten", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 21,
+  "options": [
+    {"code": "A", "text": "Saya cepat bertindak ketika melihat peluang memperbaiki pekerjaan", "dimension": "D"},
+    {"code": "B", "text": "Saya menikmati membangun relasi dengan pelanggan tetap", "dimension": "I"},
+    {"code": "C", "text": "Saya bekerja dengan penuh kesabaran", "dimension": "S"},
+    {"code": "D", "text": "Saya menjaga area kerja tetap terorganisir", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 22,
+  "options": [
+    {"code": "A", "text": "Saya bekerja dengan tempo yang tinggi", "dimension": "D"},
+    {"code": "B", "text": "Saya suka menciptakan percakapan yang menyenangkan", "dimension": "I"},
+    {"code": "C", "text": "Saya menjaga hubungan baik dengan tim", "dimension": "S"},
+    {"code": "D", "text": "Saya memastikan standar kebersihan terpenuhi", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 23,
+  "options": [
+    {"code": "A", "text": "Saya suka mengambil kendali dalam situasi kerja", "dimension": "D"},
+    {"code": "B", "text": "Saya mudah berkomunikasi dengan pelanggan", "dimension": "I"},
+    {"code": "C", "text": "Saya menjaga suasana kerja tetap stabil", "dimension": "S"},
+    {"code": "D", "text": "Saya memastikan semua langkah pembuatan minuman dilakukan benar", "dimension": "C"}
+  ]
+},
+
+{
+  "id": 24,
+  "options": [
+    {"code": "A", "text": "Saya berani menghadapi tantangan baru", "dimension": "D"},
+    {"code": "B", "text": "Saya menikmati interaksi sosial dengan pelanggan", "dimension": "I"},
+    {"code": "C", "text": "Saya senang membantu rekan kerja", "dimension": "S"},
+    {"code": "D", "text": "Saya memastikan standar rasa minuman tetap terjaga", "dimension": "C"}
+  ]
+}
+
+
+],
+
+"scoring_rules": {
+"most_score": 1,
+"least_score": -1,
+"method": "Tambahkan +1 pada dimensi yang dipilih sebagai Most dan -1 pada dimensi yang dipilih sebagai Least."
+},
+
+"ideal_profile_beverage_specialist": {
+"Dominance": "Low-Medium",
+"Influence": "Medium",
+"Steadiness": "Medium-High",
+"Conscientiousness": "High"
+}
+}
