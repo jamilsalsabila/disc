@@ -3,6 +3,7 @@
 const Path = require('path');
 const Database = require('better-sqlite3');
 const { parseQuestionsFromTxt } = require('./questions');
+const { normalizeEmail, normalizeWhatsapp } = require('./utils/identity');
 
 const dbPath = Path.join(process.cwd(), 'data', 'disc_app.db');
 const db = new Database(dbPath);
@@ -15,7 +16,9 @@ CREATE TABLE IF NOT EXISTS candidates (
   browser_token TEXT,
   full_name TEXT NOT NULL,
   email TEXT NOT NULL,
+  email_key TEXT,
   whatsapp TEXT NOT NULL,
+  whatsapp_key TEXT,
   selected_role TEXT NOT NULL,
   status TEXT NOT NULL DEFAULT 'in_progress',
   started_at TEXT NOT NULL,
@@ -82,6 +85,46 @@ function ensureCandidateBrowserTokenColumn() {
 
 ensureCandidateBrowserTokenColumn();
 
+function ensureCandidateIdentityColumns() {
+  const columns = db.prepare('PRAGMA table_info(candidates)').all();
+  const hasEmailKey = columns.some((col) => col.name === 'email_key');
+  const hasWhatsappKey = columns.some((col) => col.name === 'whatsapp_key');
+
+  if (!hasEmailKey) {
+    db.exec('ALTER TABLE candidates ADD COLUMN email_key TEXT');
+  }
+  if (!hasWhatsappKey) {
+    db.exec('ALTER TABLE candidates ADD COLUMN whatsapp_key TEXT');
+  }
+
+  db.exec('CREATE INDEX IF NOT EXISTS idx_candidates_email_key ON candidates(email_key)');
+  db.exec('CREATE INDEX IF NOT EXISTS idx_candidates_whatsapp_key ON candidates(whatsapp_key)');
+}
+
+ensureCandidateIdentityColumns();
+
+function backfillCandidateIdentityKeys() {
+  const rows = db.prepare(`
+    SELECT id, email, whatsapp
+    FROM candidates
+    WHERE email_key IS NULL OR whatsapp_key IS NULL
+  `).all();
+
+  if (!rows.length) {
+    return;
+  }
+
+  const update = db.prepare('UPDATE candidates SET email_key = ?, whatsapp_key = ? WHERE id = ?');
+  const transaction = db.transaction(() => {
+    rows.forEach((row) => {
+      update.run(normalizeEmail(row.email), normalizeWhatsapp(row.whatsapp), row.id);
+    });
+  });
+  transaction();
+}
+
+backfillCandidateIdentityKeys();
+
 function seedQuestionsFromTxtIfEmpty() {
   const total = db.prepare('SELECT COUNT(*) as total FROM questions_bank').get().total;
   if (total > 0) {
@@ -121,15 +164,36 @@ function nowIso() {
   return new Date().toISOString();
 }
 
-function createCandidate({ browserToken, fullName, email, whatsapp, selectedRole, startedAt, deadlineAt }) {
+function createCandidate({
+  browserToken,
+  fullName,
+  email,
+  emailKey,
+  whatsapp,
+  whatsappKey,
+  selectedRole,
+  startedAt,
+  deadlineAt
+}) {
   const stmt = db.prepare(`
     INSERT INTO candidates (
-      browser_token, full_name, email, whatsapp, selected_role, status,
+      browser_token, full_name, email, email_key, whatsapp, whatsapp_key, selected_role, status,
       started_at, deadline_at, created_at
-    ) VALUES (?, ?, ?, ?, ?, 'in_progress', ?, ?, ?)
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, 'in_progress', ?, ?, ?)
   `);
 
-  const result = stmt.run(browserToken, fullName, email, whatsapp, selectedRole, startedAt, deadlineAt, nowIso());
+  const result = stmt.run(
+    browserToken,
+    fullName,
+    email,
+    emailKey || null,
+    whatsapp,
+    whatsappKey || null,
+    selectedRole,
+    startedAt,
+    deadlineAt,
+    nowIso()
+  );
   return result.lastInsertRowid;
 }
 
@@ -144,6 +208,19 @@ function getInProgressCandidateByBrowserToken(browserToken) {
   return db
     .prepare("SELECT * FROM candidates WHERE browser_token = ? AND status = 'in_progress' ORDER BY id DESC LIMIT 1")
     .get(browserToken);
+}
+
+function findCandidateByIdentity({ emailKey, whatsappKey }) {
+  if (!emailKey && !whatsappKey) {
+    return null;
+  }
+  return db.prepare(`
+    SELECT *
+    FROM candidates
+    WHERE (email_key = @emailKey OR whatsapp_key = @whatsappKey)
+    ORDER BY id DESC
+    LIMIT 1
+  `).get({ emailKey: emailKey || null, whatsappKey: whatsappKey || null });
 }
 
 function saveSubmission({
@@ -400,6 +477,7 @@ module.exports = {
   createCandidate,
   getCandidateById,
   getInProgressCandidateByBrowserToken,
+  findCandidateByIdentity,
   listQuestions,
   getQuestionById,
   getNextQuestionOrder,

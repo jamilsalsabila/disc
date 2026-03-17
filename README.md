@@ -9,6 +9,7 @@ Aplikasi tes DISC untuk seleksi:
 - Form identitas kandidat (nama, email, WA aktif, role dipilih)
 - Tes DISC 24 soal dengan timer 10 menit
 - Auto-submit saat waktu habis
+- Kandidat hanya bisa ikut tes 1 kali (berdasarkan email/WA)
 - Simpan hasil ke SQLite database
 - Rekomendasi role otomatis + alasan penilaian
 - Dashboard HR (tabel kandidat + filter + grafik)
@@ -69,3 +70,4 @@ npm run verify:health -- "PasswordHRAnda"
 ## Catatan
 - Soal diambil dari file `one_for_all_v1.txt`
 - Database otomatis dibuat di `data/disc_app.db`
+- Jika kandidat perlu retest, data kandidat sebelumnya bisa dihapus dari dashboard HR.

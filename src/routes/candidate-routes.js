@@ -12,6 +12,7 @@ const {
   createCandidate,
   getCandidateById,
   getInProgressCandidateByBrowserToken,
+  findCandidateByIdentity,
   listQuestions,
   saveSubmission
 } = require('../db');
@@ -23,6 +24,7 @@ const {
   buildIncompleteEvaluation,
   buildAnswersFromPayload
 } = require('../services/disc-service');
+const { normalizeEmail, normalizeWhatsapp } = require('../utils/identity');
 
 function registerCandidateRoutes(server) {
   server.route({
@@ -93,10 +95,28 @@ function registerCandidateRoutes(server) {
         h.state('disc_browser_token', browserToken);
       }
 
+      const emailKey = normalizeEmail(request.payload.email);
+      const whatsappKey = normalizeWhatsapp(request.payload.whatsapp);
+
       const activeByBrowser = getInProgressCandidateByBrowserToken(browserToken);
       if (activeByBrowser) {
         request.cookieAuth.set({ candidateId: activeByBrowser.id });
         return h.redirect('/test');
+      }
+
+      const existingCandidate = findCandidateByIdentity({ emailKey, whatsappKey });
+      if (existingCandidate) {
+        if (existingCandidate.status === 'in_progress' && existingCandidate.browser_token === browserToken) {
+          request.cookieAuth.set({ candidateId: existingCandidate.id });
+          return h.redirect('/test');
+        }
+
+        return h.view('identity', {
+          pageTitle: 'Tes DISC Kandidat',
+          roleOptions: ROLE_OPTIONS,
+          errorMessage: `Kandidat dengan email/WA ini sudah pernah terdaftar (ID #${existingCandidate.id}) dan tidak bisa mengikuti tes lebih dari satu kali.`,
+          values: request.payload
+        }).code(409);
       }
 
       if (request.auth.isAuthenticated) {
@@ -114,7 +134,9 @@ function registerCandidateRoutes(server) {
         browserToken,
         fullName: request.payload.full_name,
         email: request.payload.email,
+        emailKey,
         whatsapp: request.payload.whatsapp,
+        whatsappKey,
         selectedRole: request.payload.selected_role,
         startedAt,
         deadlineAt
